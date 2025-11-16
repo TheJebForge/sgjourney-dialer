@@ -745,6 +745,13 @@ local commandCatalog = {
         "waypoint add <label> <address> / waypoint remove <label>",
         "Adds or removes waypoints from name server",
         waypointCommand
+    },
+    id = {
+        "id",
+        "Prints ID of the computer",
+        function(resp)
+            resp("This is computer #"..os.getComputerID())
+        end
     }
 }
 
