@@ -13,14 +13,18 @@ Program for ComputerCraft to control SGJourney stargates
 - Place a computer and an ender modem
 - Chunkload the computer to ensure it's always going to be available
 - Use wget to download `nameServer.lua`
-- Rename the file to `startup.lua`
+```shell
+wget https://github.com/TheJebForge/sgjourney-dialer/raw/refs/heads/main/nameServer.lua startup.lua
+```
 - Reboot the computer
 
 ### Dialing computer
 - Attach a stargate interface to the stargate
 - Put a computer next to it or connect the interface to computer using wired modems
 - Use wget to download `dialer.lua`
-- Rename it to `startup.lua`
+```shell
+wget https://github.com/TheJebForge/sgjourney-dialer/raw/refs/heads/main/dialer.lua startup.lua
+```
 - Reboot the computer
 
 If you only have basic or crystal interface attached to the computer, you'll be prompted to provide the address of the gate
