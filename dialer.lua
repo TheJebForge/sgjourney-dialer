@@ -37,6 +37,9 @@ local stargateInfo = {}
 local stargateAddress = nil
 
 do
+    print("Waiting 1 second for potential unloaded chunks to load")
+    sleep(1)
+    
     local interfaceVariant = nil
 
     for _, variant in pairs({
