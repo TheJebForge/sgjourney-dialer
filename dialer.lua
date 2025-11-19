@@ -37,9 +37,6 @@ local stargateInfo = {}
 local stargateAddress = nil
 
 do
-    print("Waiting 1 second for potential unloaded chunks to load")
-    sleep(1)
-    
     local interfaceVariant = nil
 
     for _, variant in pairs({
@@ -57,7 +54,9 @@ do
     end
 
     if not stargate then
-        error("No Stargate interfaces found!", 1)
+        print("No stargate interfaces found! Please ensure one is attached and chunks are loaded!\nRestarting in 5 seconds...")
+        sleep(5)
+        os.reboot()
     end
 
     -- Find out if this interface can even dial the gate
