@@ -176,7 +176,6 @@ local function findWaypointAddress(search)
     search = (search or ""):lower()
 
     for _, entry in pairs(waypointTable) do
-        print("matching", entry[1], "and", search)
         if entry[1] and tostring(entry[1]):lower() == search then
             return entry[2]
         end
